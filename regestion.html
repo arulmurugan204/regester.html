@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> EMPLOY REGISTRATION FORM</title>
+   <style>
+       * {
+           box-sizing: border-box;
+           margin: 0;
+           padding: 0;
+           font-family: Arial, sans-serif;
+       }
+
+
+       body {
+           background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR271TZkf7gZhRfnXDbs-2Qw0nvjM8U4yeiog&s");
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           background-repeat: no-repeat;
+           background-size: cover;
+       }
+
+
+       .container {
+           background-image: url("data:image/jpeg;base64,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");
+           padding: 20px;
+           border-radius: 8px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           width: 30%;
+           max-width: 600px;
+           background-repeat: no-repeat;
+           background-size: cover;
+       }
+
+
+       h2 {
+           margin-bottom: 20px;
+           text-align: center;
+       }
+
+
+       .form-group {
+           margin-bottom: 15px;
+       }
+
+
+       .form-group label {
+           display: block;
+           margin-bottom: 5px;
+           font-weight: bold;
+       }
+
+
+       .form-group input,
+       .form-group textarea,
+       .form-group button {
+           width: 100%;
+           padding: 10px;
+           border: 1px solid rgb(98, 194, 9);
+           border-radius: 4px;
+       }
+
+
+       .form-group .radio-group {
+           display: flex;
+           justify-content: space-between;
+       }
+
+
+       .form-group .radio-group label {
+           font-weight: normal;
+       }
+
+
+       .form-group button {
+           background-color: #3471f7;
+           color: white;
+           border: none;
+           cursor: pointer;
+       }
+
+
+       .form-group button:hover {
+           background-color: #45a049;
+       }
+   </style>
+</head>
+<body>
+   <div class="container">
+       <h2> EMPLOY REGISTRATION FORM</h2>
+       <form action="/submit_registration" method="POST">
+           <div class="form-group">
+               <label for="Name">Name:</label>
+               <input type="text" id="Name" name="Name" required>
+           </div>
+           <div class="form-group">
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required>
+           </div>
+           <div class="form-group">
+               <label for="Phone Number">Phone Number:</label>
+               <input type="Phone Number" id="Phone Number" name="Phone Number" required>
+           </div>
+           <div class="form-group">
+           <lable for="Dept"><b>Dept</b></lable>
+              <input type="text" name="Dept"required>
+              </div>
+               <label>Gender:</label>
+               <div class="radio-group">
+                   <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+                   <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+                   <label for="other"><input type="radio" id="other" name="gender" value="other"> Other</label>
+               </div>
+            <div class="form-group">
+               <label for="Addres">Addres:</label>
+               <textarea id="Addres" name="Addres" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+           </div>
+           <div class="form-group">
+               <label for="agree">Agree to terms:</label>
+               <input type="checkbox" id="agree" name="agree" value="yes" required>
+           </div>
+           <div class="form-group">
+               <button type="submit">Submit</button>
+           </div>
+       </form>
+   </div>
+</body>
+</html>
